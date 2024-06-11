@@ -10,7 +10,7 @@ contract FundMeTest is Test {
 
     function setUp() external {
         DeployFundMe deployFundMe = new DeployFundMe();
-        deployFundMe.run();
+        fundMe = deployFundMe.run();
     }
 
     function testMinimumDollarIsDive() public {
@@ -18,7 +18,7 @@ contract FundMeTest is Test {
     }
 
     function testOwner() public {
-        assertEq(address(this), fundMe.i_owner());
+        assertEq(msg.sender, fundMe.i_owner());
     }
 
     function testPriceFeedVersionIsCorrect() public {
