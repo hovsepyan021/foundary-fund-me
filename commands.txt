@@ -1,0 +1,11 @@
+To register source
+
+1) source .env
+
+To run tests
+
+1) forge test --fork-url $SEPOLIA_RPC_URL
+
+Check coverage
+
+1) forge coverage --fork-url $SEPOLIA_RPC_URL
