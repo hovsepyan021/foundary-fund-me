@@ -9,3 +9,11 @@ To run tests
 Check coverage
 
 1) forge coverage --fork-url $SEPOLIA_RPC_URL
+
+To debug
+
+1) chisel
+
+To check gas by tests
+
+1) forge snapshot
